@@ -37,7 +37,6 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 36px;
-
 }
 
 h3 {
@@ -62,7 +61,6 @@ img {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-
 }
 
 .link {
@@ -83,7 +81,6 @@ img {
 .navigate {
   display: flex;
   align-items: center;
-
 }
 
 .logo {
@@ -95,7 +92,6 @@ img {
   text-transform: uppercase;
   color: var(--IRIS);
   margin-right: 76px;
-
 }
 
 header .logo-second {
@@ -112,6 +108,7 @@ header .logo-second {
   display: flex;
   gap: 40px;
   padding: 24px 0;
+  list-style: none;
 }
 
 .link-item-header {
@@ -123,7 +120,7 @@ header .logo-second {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
+  }
 
 .list-item .link {
   font-weight: 500;
@@ -131,8 +128,7 @@ header .logo-second {
   position: relative; 
   color: #404bbf;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-}
+  }
 
 .link-item-header::after{
   content: '';
@@ -156,6 +152,9 @@ header .logo-second {
 .li-address {
   display: flex;
   gap: 40px;
+  
+}
+.li-address > .link{
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -213,6 +212,10 @@ address a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--NAVY-BLUE);
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--NAVY-BLUE);
+  margin-bottom: 72px;
 }
 
 .visually-hidden {
@@ -231,6 +234,17 @@ address a {
 .ul-section-second {
   display: flex;
   gap: 24px;
+}
+
+.wrap-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+
 }
 
 .li-section-second {
@@ -280,6 +294,7 @@ address a {
   /* width: calc((100% - 72px) / 4); */
   flex-basis: calc((100%-24*3)/4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .container-employee {
@@ -294,6 +309,36 @@ address a {
 .p-card {
   text-align: center;
 }
+.ul-social{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.li-social{
+  width: 40px;
+  height: 40px;
+}
+.a-social{
+  width: 100%;
+  height: 100%;
+  background-color:var(--IRIS);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.a-social:hover, .a-social:focus{
+  background-color:var(--OCEAN);
+}
+.icon-social{
+  fill: var(--CLOUD);
+}
+
+ /* section 5 Customers  */
+ .customers{
+  padding-top: 120px;
+
+ }
 
 /* Portfolio Page */
 
