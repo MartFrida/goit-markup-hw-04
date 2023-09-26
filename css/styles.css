@@ -394,7 +394,7 @@ address a {
   margin-bottom: 72px;
 }
 
-.ul-filter .btn {
+.btn-filter {
   background-color: var(--CLOUD);
   border: 1px solid var(--CORNFLOWER);
   color: var(--IRIS);
@@ -408,13 +408,13 @@ address a {
   padding: 12px 24px;
   border: 1px solid var(--CORNFLOWER);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .btn-filter{
-  padding: 12px 24px;
-  border: 1px solid var(--CORNFLOWER);
-  border-radius: 4px;
-} */
+.btn-filter:hover,
+.btn-filter:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .btn:active,
 .btn:hover,
@@ -424,25 +424,53 @@ address a {
   border: 1px solid transparent;
 }
 
-/* ul-wrap*/
-.ul-wrap {
+/* list-wrap*/
+.list-wrap-apps {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
 
-.project-card {
+.item-apps {
   width: calc((100% - 48px) / 3);
 }
 
-.shot-description-cart {
+.link-app {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-app:hover,
+.link-app:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
+}
+
+.image-app {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-image-app {
+  position: absolute;
+  top: 0;
+  color: var(--CLOUD);
+  padding: 40px 32px;
+  background-color: var(--IRIS);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shot-description-apps {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
-.header-card-content {
+.header-card-apps {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -508,7 +536,8 @@ address a {
 .link-footer-social {
   width: 100%;
   height: 100%;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--IRIS);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -530,6 +559,7 @@ address a {
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -574,13 +604,14 @@ address a {
 .modal-btn:focus {
   background-color: var(--OCEAN);
   border: none;
+  fill: var(--WHITE);
 }
 
 .modal-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon:hover,
+/* .modal-btn-icon:hover,
 .modal-btn-icon:focus {
   fill: var(--WHITE);
-}
+} */
