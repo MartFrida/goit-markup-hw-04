@@ -384,7 +384,6 @@ address a {
   padding-bottom: 120px;
 }
 
-
 /* FILTERS */
 .ul-filter {
   justify-content: center;
@@ -444,8 +443,7 @@ address a {
 .link-app:hover,
 .link-app:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
-}
+  }
 
 .image-app {
   position: relative;
@@ -460,13 +458,13 @@ address a {
   background-color: var(--IRIS);
   height: 100%;
   width: 100%;
-  
+  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-image-app:hover,
 .text-image-app:focus{
-  transform: translateY(100%);
+  transform: translateY(0%);
 }
 
 .shot-description-apps {
@@ -615,7 +613,7 @@ address a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover .modal-btn-icon,
-.modal-btn:focus .modal-btn-icon {
+.modal-btn:hover.modal-btn-icon,
+.modal-btn:focus.modal-btn-icon {
   fill: var(--WHITE);
 }
