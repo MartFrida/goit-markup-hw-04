@@ -331,7 +331,7 @@ address a {
 }
 
 .link-social-employee:hover,
-.link-social-employee:focus-visible {
+.link-social-employee:focus {
   background-color: var(--OCEAN);
 }
 
